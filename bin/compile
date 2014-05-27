@@ -11,16 +11,7 @@ CACHE_DIR=$2
 # <BUILD_DIR> is (during this stage) a temporary directory. 
 # During execution of your slug it'll be known as '/app'.
 
-BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
 
-function indent() {
-  c='s/^/       /'
-  case $(uname) in
-    Darwin) sed -l "$c";;
-    *)      sed -u "$c";;
-  esac
-}
-
-indent "Nothing to do during compile"
+echo "-----> Nothing to do during compile"
 
 exit 0
