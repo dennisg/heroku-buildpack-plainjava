@@ -1,17 +1,4 @@
-#!/usr/bin/env bash
-# bin/compile <build-dir> <cache-dir>
-
-# fail fast
-set -e
-
-# parse args
-BUILD_DIR=$1
-CACHE_DIR=$2
-
-# <BUILD_DIR> is (during this stage) a temporary directory. 
-# During execution of your slug it'll be known as '/app'.
-
+#!/bin/bash
+# bin/compile <build-dir> <cache-dir> <env_dir>
 
 echo "-----> Nothing to do during compile"
-
-exit 0
